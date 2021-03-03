@@ -9,7 +9,6 @@ const { validateLoginData, validateSignUpData } = require('../util/validators');
 
 // Login
 exports.loginUser = (request, response) => {
-    console.log("here");
     const user = {
         email: request.body.email,
         password: request.body.password
@@ -34,9 +33,6 @@ exports.loginUser = (request, response) => {
 };
 
 exports.signUpUser = (request, response) => {
-    console.log("here");
-
-    console.log(request.body.email);
 
     const newUser = {
         firstName: request.body.firstName,
